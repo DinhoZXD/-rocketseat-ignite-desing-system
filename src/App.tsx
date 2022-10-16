@@ -1,17 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './styles/global.css'
+import { SingIn } from './Pages/Signin'
 
 export function App() {
 
   return (
-    <>
-    <h1 className='font-bold text-2xl text-violet-500'>Ola mundo</h1>
-    
-      <button className='bg-cyan-500 font-medium px-4 py-2 rounded text-white hover:bg-cyan-300'> Enviar </button>
-      
-    </>
+    <SingIn />
   )
 }
-
-

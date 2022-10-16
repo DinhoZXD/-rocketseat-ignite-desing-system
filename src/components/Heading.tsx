@@ -5,9 +5,10 @@ import { ReactNode } from 'react';
     size?:'sm'| 'md'|'lg';
     children:ReactNode
     asChild?:boolean
+    className?:string
 }
 
-export function Heading ({ size = 'md',children,asChild}: HeadingProps) {
+export function Heading ({ size = 'md',children,asChild,className}: HeadingProps) {
    const Comp = asChild ? Slot:'h2'
    
     return (
